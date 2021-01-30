@@ -1,5 +1,5 @@
 {
-  "name": "webpacklearn2",
+  "name": "ezozcrm",
   "version": "1.0.0",
   "description": "",
   "main": "index.jsx",
@@ -20,6 +20,7 @@
     "eslint-plugin-react": "^7.22.0",
     "html-webpack-plugin": "^4.5.1",
     "typescript": "^4.1.3",
+    "typings-for-css-modules-loader": "^1.7.0",
     "webpack": "^5.19.0",
     "webpack-dev-server": "^3.11.2"
   },
