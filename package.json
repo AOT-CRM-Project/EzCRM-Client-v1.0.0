@@ -25,6 +25,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "@babel/preset-typescript": "^7.12.13",
     "autoprefixer": "^10.2.4",
     "css-loader": "^5.0.1",
     "eslint": "^7.18.0",
