@@ -2,5 +2,14 @@
   "compilerOptions": {
     "plugins": [{ "name": "typescript-plugin-css-modules" }],
     "jsx": "react",
-  }
+    "allowJs": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "target": "es6",
+    "module": "commonjs",
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": [
+    "node_modules"
+  ]
 }
