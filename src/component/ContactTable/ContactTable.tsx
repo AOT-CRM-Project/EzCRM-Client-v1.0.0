@@ -11,6 +11,7 @@ import Paper from '@material-ui/core/Paper';
 import styles from './ContactTable.module.scss';
 
 import contacts from './sampleData';
+import AddIcon from '@material-ui/icons/AddCircleOutlineRounded';
 
 const useStyles = makeStyles({
   table: {
@@ -32,6 +33,11 @@ const tableHeads = [
   { key: "notes", value: "Notes" },
 ];
 
+const AddButton = () => (
+  <button className={styles.add_button}>
+    <AddIcon color="primary"/>
+  </button>
+);
 
 export default function ContactTable() {
   const classes = useStyles();
@@ -39,39 +45,43 @@ export default function ContactTable() {
   const tableKeys = tableHeads.map(tableHead => tableHead.key);
 
   return (
-    <TableContainer component={Paper}>
-      <Table className={classes.table} aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            <TableCell />
-            {tableHeads.map(tableHead => (
-              <TableCell key={tableHead.key}>
-                {tableHead.value}
-              </TableCell>
-            ))}
-          </TableRow>
-        </TableHead>
-
-        <TableBody>
-          {contacts.map((contact) => (
-            <TableRow key={contact.id}>
-              <TableCell component="th" scope="row">
-                <div className={styles.add_icon_wrapper}>
-                  +
-                </div>
-              </TableCell>
-              {Object
-                .values(contact)
-                .filter((_, index) => Object.keys(contact)[index] !== 'id')
-                .map((value, index) => (
-                  <TableCell key={tableKeys[index]}>
-                    {value}
-                  </TableCell>
+    <>
+      <TableContainer component={Paper}>
+        <Table className={classes.table} aria-label="simple table">
+          <TableHead>
+            <TableRow>
+              <TableCell />
+              {tableHeads.map(tableHead => (
+                <TableCell key={tableHead.key}>
+                  {tableHead.value}
+                </TableCell>
               ))}
             </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
+          </TableHead>
+
+          <TableBody>
+            {contacts.map((contact) => (
+              <TableRow key={contact.id}>
+                <TableCell component="th" scope="row">
+                  <div className={styles.add_icon_wrapper}>
+                    +
+                  </div>
+                </TableCell>
+                {Object
+                  .values(contact)
+                  .filter((_, index) => Object.keys(contact)[index] !== 'id')
+                  .map((value, index) => (
+                    <TableCell key={tableKeys[index]}>
+                      {value}
+                    </TableCell>
+                ))}
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+
+      <AddButton />
+    </>
   );
 }
