@@ -17,7 +17,6 @@ import AddIconBox from '@material-ui/icons/AddBoxOutlined';
 const useStyles = makeStyles({
   table: {
     minWidth: 650,
-    maxWidth: 1440,
   },
 });
 
@@ -41,8 +40,6 @@ const StyledTableBody = withStyles({
 })(TableBody);
 
 export default function ContactTable() {
-  const classes = useStyles();
-
   const tableKeys = tableHeads.map(tableHead => tableHead.key);
 
   return (
@@ -50,7 +47,7 @@ export default function ContactTable() {
       <h1 className={styles.title}>Contact</h1>
 
       <TableContainer component={Paper}>
-        <Table className={classes.table} aria-label="simple table">
+        <Table aria-label="simple table">
           <TableHead>
             <TableRow>
               <TableCell />
