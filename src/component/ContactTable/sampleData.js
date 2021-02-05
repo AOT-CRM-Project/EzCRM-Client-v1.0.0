@@ -14,7 +14,7 @@ const contacts = [
   },
   {
     id: 2,
-    name: 'David',
+    name: 'Bruce',
     title: 'Mr',
     company: 'Google',
     email: 'blabla@gmail.com',
