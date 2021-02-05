@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -34,6 +34,12 @@ const tableHeads = [
   { key: "notes", value: "Notes" },
 ];
 
+const StyledTableBody = withStyles({
+  root: {
+    background: 'rgba(0, 0, 0, 0)',
+  }
+})(TableBody);
+
 export default function ContactTable() {
   const classes = useStyles();
 
@@ -56,7 +62,7 @@ export default function ContactTable() {
             </TableRow>
           </TableHead>
 
-          <TableBody>
+          <StyledTableBody>
             {contacts.map((contact) => (
               <TableRow key={contact.id}>
                 <TableCell component="th" scope="row">
@@ -77,11 +83,11 @@ export default function ContactTable() {
             <TableRow>
               <TableCell align="center">
                 <button className={styles.add_button_round}>
-                  <AddIconRound color="primary"/>
+                  <AddIconRound htmlColor="#23036a"/>
                 </button>
               </TableCell>
             </TableRow>
-          </TableBody>
+          </StyledTableBody>
         </Table>
       </TableContainer>
     </>
