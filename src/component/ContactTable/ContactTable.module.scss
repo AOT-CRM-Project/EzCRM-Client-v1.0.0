@@ -10,14 +10,35 @@
   font-size: 9px;
 }
 
-.add_button {
-  height: 29px;
-  width: 29px;
+.add_button_round {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
   border: none;
   background-color: white;
+  outline: none;
+  width: 100%;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
+.add_button_box {
+  outline: none;
+  border: none;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.title {
+  font-family: Roboto;
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 56px;
+}

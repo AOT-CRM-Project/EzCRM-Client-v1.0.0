@@ -11,7 +11,8 @@ import Paper from '@material-ui/core/Paper';
 import styles from './ContactTable.module.scss';
 
 import contacts from './sampleData';
-import AddIcon from '@material-ui/icons/AddCircleOutlineRounded';
+import AddIconRound from '@material-ui/icons/AddCircleOutlineRounded';
+import AddIconBox from '@material-ui/icons/AddBoxOutlined';
 
 const useStyles = makeStyles({
   table: {
@@ -33,12 +34,6 @@ const tableHeads = [
   { key: "notes", value: "Notes" },
 ];
 
-const AddButton = () => (
-  <button className={styles.add_button}>
-    <AddIcon color="primary"/>
-  </button>
-);
-
 export default function ContactTable() {
   const classes = useStyles();
 
@@ -46,6 +41,8 @@ export default function ContactTable() {
 
   return (
     <>
+      <h1 className={styles.title}>Contact</h1>
+
       <TableContainer component={Paper}>
         <Table className={classes.table} aria-label="simple table">
           <TableHead>
@@ -63,9 +60,9 @@ export default function ContactTable() {
             {contacts.map((contact) => (
               <TableRow key={contact.id}>
                 <TableCell component="th" scope="row">
-                  <div className={styles.add_icon_wrapper}>
-                    +
-                  </div>
+                  <button className={styles.add_button_box}>
+                    <AddIconBox color="disabled" fontSize="small"/>
+                  </button>
                 </TableCell>
                 {Object
                   .values(contact)
@@ -77,11 +74,16 @@ export default function ContactTable() {
                 ))}
               </TableRow>
             ))}
+            <TableRow>
+              <TableCell align="center">
+                <button className={styles.add_button_round}>
+                  <AddIconRound color="primary"/>
+                </button>
+              </TableCell>
+            </TableRow>
           </TableBody>
         </Table>
       </TableContainer>
-
-      <AddButton />
     </>
   );
 }
