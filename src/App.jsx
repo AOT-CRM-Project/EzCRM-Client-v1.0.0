@@ -1,5 +1,5 @@
 import React from 'react';
-import TestComponent from './component/TestComponent';
+import ContactTable from './component/ContactTable';
 
 export default function App() {
   return (
@@ -7,7 +7,7 @@ export default function App() {
       <h1>
         Welcome to EzOzCRM-Client-v1.0.0
       </h1>
-      <TestComponent />
+      <ContactTable />
     </>
   );
 }
