@@ -1,4 +1,4 @@
-import "./LogPagesProps.css";
+import "./LogPagesProps.scss";
 import React from 'react';
 
 export default function LogPagesProps({active, header, children, footer}) {

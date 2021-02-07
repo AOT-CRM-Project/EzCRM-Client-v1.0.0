@@ -1,6 +1,6 @@
 import React from "react";
 import LogPagesProps from "../LogPagesProps/LogPagesProps";
-import "./ForgetPwdPage.css";
+import "./ForgetPwdPage.scss";
 import emailIcon from "../../img/emailIcon.svg";
 
 export default function ForgetPwdPage({ active }) {

@@ -1,5 +1,5 @@
 import React from "react";
-import "./ResetPwdPage.css";
+import "./ResetPwdPage.scss";
 import LogPagesProps from "../LogPagesProps/LogPagesProps";
 import visibilityIcon from "../../img/visibilityIcon.svg";
 

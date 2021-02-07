@@ -1,7 +1,7 @@
 import React from 'react';
 import ForgetPwdPage from './ForgetPwdPage/ForgetPwdPage';
 import LoginPage from './LoginPage/LoginPage';
-import './LogPages.css';
+import './LogPages.scss';
 import ResetPwdPage from './ResetPwdPage/ResetPwdPage';
 import SignUpPage from "./SignUpPage/SignUpPage";
 

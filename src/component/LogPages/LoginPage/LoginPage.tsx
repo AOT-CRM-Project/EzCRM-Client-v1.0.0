@@ -1,6 +1,6 @@
 import React from "react";
 import LogPagesProps from "../LogPagesProps/LogPagesProps";
-import "./LoginPage.css";
+import "./LoginPage.scss";
 import emailIcon from "../../img/emailIcon.svg";
 import passwordIcon from "../../img/passwordIcon.svg";
 

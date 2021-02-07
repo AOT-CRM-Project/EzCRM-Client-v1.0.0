@@ -1,6 +1,6 @@
 import React from "react";
 import LogPagesProps from "../LogPagesProps/LogPagesProps";
-import "./SignUpPage.css";
+import "./SignUpPage.scss";
 import visibilityIcon from "../../img/visibilityIcon.svg";
 
 export default function SignUpPage({ active }) {
