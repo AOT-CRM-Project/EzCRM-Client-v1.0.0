@@ -1,0 +1,78 @@
+
+.forgetPwdPage-input {
+  width: 330px;
+  margin-top: 65px;
+  position: relative;
+}
+
+.forgetPwdPage-input img{
+  border-bottom: solid 1px #969696;
+  position: absolute;
+  bottom: 0;
+}
+
+.forgetPwdPage-input input{
+  border: none;
+  border-bottom: solid 1px #969696;
+  width: 300px;
+
+  margin-left: 24px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.05px;
+  color: #969696;
+}
+
+.forgetPwdPage-text {
+  margin: 85px 0px 5px 0px;
+
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.04px;
+  text-align: center;
+  color: #ff0000;
+}
+
+.signPage-smallButton1 {
+  width: 150px;
+
+  margin: 30px 34px 0 0;
+  padding: 15px 0px 15px 0;
+  border: solid 1px #979797;
+  background-color: #23036a;
+
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.38px;
+  color: #ffffff;
+}
+
+.signPage-smallButton2 {
+  width: 150px;
+
+  margin: 30px 0px 0 0;
+  padding: 15px 0px 15px 0;
+  border: solid 1px #979797;
+  background-color: #23036a;
+
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.38px;
+  color: #ffffff;
+}
