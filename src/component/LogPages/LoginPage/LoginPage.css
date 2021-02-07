@@ -1,23 +1,36 @@
-.logInPage-email{
-    border-bottom: solid 1px #969696;
-    
+.loginPage-text{
+  margin: 65px 0px 5px 0px;
 
-    font-family: Roboto;
-  font-size: 16px;
+  font-family: Roboto;
+  font-size: 12px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  letter-spacing: 0.05px;
-  color: #969696;
+  letter-spacing: 0.04px;
+  text-align: center;
+  color: #ff0000;
+}
+
+.loginPage-password{
+  width: 330px;
+  margin-top: 65px;
   position: relative;
 }
 
-.logInPage-password{
-    border-bottom: solid 1px #969696;
-    
+.loginPage-password img{
+  border-bottom: solid 1px #969696;
+  position: absolute;
+  bottom: 0;
+}
 
-    font-family: Roboto;
+.loginPage-password input{
+  border: none;
+  border-bottom: solid 1px #969696;
+  width: 255px;
+  margin-left: 24px;
+
+  font-family: Roboto;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -27,7 +40,18 @@
   color: #969696;
 }
 
-.logInPage-email img{
-    position: start;
-    
+.loginPage-password span{
+  border-bottom: solid 1px #969696;
+  position: absolute;
+  bottom: 0%;
+
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.04px;
+  color: #969696;
 }
+

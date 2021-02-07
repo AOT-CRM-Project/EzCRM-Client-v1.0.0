@@ -1,6 +1,7 @@
 import React from "react";
 import "./ResetPwdPage.css";
 import LogPagesProps from "../LogPagesProps/LogPagesProps";
+import visibilityIcon from "../../img/visibilityIcon.svg";
 
 export default function ResetPwdPage({ active }) {
   return (
@@ -11,20 +12,33 @@ export default function ResetPwdPage({ active }) {
     >
       <div>
         <form>
-          <input
-            className="signUp-detail"
-            type="text"
-            id="resetPwd"
-            name="resetPwd"
-            placeholder="Password"
-          ></input>
-          <input
-            className="signUp-detail"
-            type="text"
-            id="resetConfirmPwd"
-            name="resetConfirmPwd"
-            placeholder="Confirm Password"
-          ></input>
+          <div className="signUp-password">
+            <input
+              className="signUp-detail"
+              type="text"
+              id="resetPwd"
+              name="resetPwd"
+              placeholder="Password"
+            ></input>
+
+            <div className="visibilityIcon">
+              <img src={visibilityIcon} alt="visibility"></img>
+            </div>
+          </div>
+
+          <div className="signUp-password">
+            <input
+              className="signUp-detail"
+              type="text"
+              id="resetConfirmPwd"
+              name="resetConfirmPwd"
+              placeholder="Confirm Password"
+            ></input>
+
+            <div className="visibilityIcon">
+              <img src={visibilityIcon} alt="visibility"></img>
+            </div>
+          </div>
 
           <input
             className="signPage-buttons"

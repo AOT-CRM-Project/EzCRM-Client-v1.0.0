@@ -1,26 +1,48 @@
-import React from 'react';
-import emailIcon from '../../img/emailIcon';
-import LogPagesProps from '../LogPagesProps/LogPagesProps';
-import './LoginPage.css';
+import React from "react";
+import LogPagesProps from "../LogPagesProps/LogPagesProps";
+import "./LoginPage.css";
+import emailIcon from "../../img/emailIcon.svg";
+import passwordIcon from "../../img/passwordIcon.svg";
 
+export default function LoginPage({ active }) {
+  return (
+    <LogPagesProps
+      active={active}
+      header="Log in to your account"
+      footer="Don't have an account?"
+    >
+      <div>
+        <form>
+          <div className="forgetPwdPage-input">
+            <img src={emailIcon}></img>
+            <input
+              type="text"
+              id="loginPage-email"
+              name="loginPage-email"
+              placeholder="Email"
+            ></input>
+          </div>
 
-export default function LoginPage ({active}) {
-    return(
-        <LogPagesProps active={active} header="Log in to your account" footer="Don't have an account?">
-                
-            <div className="logInPage">
-                <div className="logInPage-email">
-                    <emailIcon />
-                    <p>Email</p>
-                </div>
+          <div className="loginPage-password">
+            <img src={passwordIcon}></img>
+            <input
+              type="text"
+              id="logInPage-password"
+              name="logInPage-password"
+              placeholder="Password"
+            ></input>
+            <span>Forget?</span>
+          </div>
 
-                <div className="logInPage-password">
-                    {/* <img src={require("../../img/passwordIcon.svg")}></img> */}
-                    <p>Password</p>
-                </div>
+          <p className="loginPage-text">Invalid Email or Password. Please try again.</p>
 
-            </div>
-
-        </LogPagesProps>
-    );
+          <input
+            className="signPage-buttons"
+            type="submit"
+            value="Log in"
+          ></input>
+        </form>
+      </div>
+    </LogPagesProps>
+  );
 }

@@ -10,8 +10,8 @@ export default function LogPages() {
       <>
       <SignUpPage />
       <ResetPwdPage  />
-      <LoginPage />
-      <ForgetPwdPage active/>
+      <LoginPage active/>
+      <ForgetPwdPage />
         
         </>
     );
