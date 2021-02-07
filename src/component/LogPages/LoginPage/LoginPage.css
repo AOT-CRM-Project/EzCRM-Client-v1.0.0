@@ -1,0 +1,33 @@
+.logInPage-email{
+    border-bottom: solid 1px #969696;
+    
+
+    font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.05px;
+  color: #969696;
+  position: relative;
+}
+
+.logInPage-password{
+    border-bottom: solid 1px #969696;
+    
+
+    font-family: Roboto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.05px;
+  color: #969696;
+}
+
+.logInPage-email img{
+    position: start;
+    
+}
