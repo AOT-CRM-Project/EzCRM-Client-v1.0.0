@@ -1,4 +1,4 @@
-# EzOzCRM-Client-v1.0.0
+# EzCRM-Client-v1.0.0
 # This project was bootstrapped with Webpack
 
 Before you start, Please run:
