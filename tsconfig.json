@@ -8,7 +8,7 @@
     "target": "es6",
     "module": "commonjs",
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/index.js", "src/index.js", "src/component/ContactTable/sampleData.js"],
   "exclude": [
     "node_modules"
   ]
