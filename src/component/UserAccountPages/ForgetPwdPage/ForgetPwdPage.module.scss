@@ -1,17 +1,22 @@
+.ForgetPwdPage{
+  
+}
 
-.forgetPwdPage-input {
+
+
+.email {
   width: 330px;
   margin-top: 65px;
   position: relative;
 }
 
-.forgetPwdPage-input img{
+.img{
   border-bottom: solid 1px #969696;
   position: absolute;
   bottom: 0;
 }
 
-.forgetPwdPage-input input{
+.emailInput{
   border: none;
   border-bottom: solid 1px #969696;
   width: 300px;
@@ -27,7 +32,7 @@
   color: #969696;
 }
 
-.forgetPwdPage-text {
+.text {
   margin: 85px 0px 5px 0px;
 
   font-family: Roboto;
@@ -41,7 +46,23 @@
   color: #ff0000;
 }
 
-.signPage-smallButton1 {
+.buttons {
+  width: 335px;
+  margin: 24px 0px 0px 0;
+  padding: 15px 87px 15px 86px;
+  border: solid 1px #979797;
+  background-color: #23036a;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.38px;
+  color: #ffffff;
+}
+
+.smallButton1 {
   width: 150px;
 
   margin: 30px 34px 0 0;
@@ -59,7 +80,7 @@
   color: #ffffff;
 }
 
-.signPage-smallButton2 {
+.smallButton2 {
   width: 150px;
 
   margin: 30px 0px 0 0;

@@ -1,52 +1,52 @@
 import React from "react";
-import "./ResetPwdPage.scss";
-import LogPagesProps from "../LogPagesProps/LogPagesProps";
-import visibilityIcon from "../../img/visibilityIcon.svg";
+import styles from "./ResetPwdPage.module.scss";
+import AccountPageTemplate from "../AccountPageTemplate/AccountPageTemplate";
+import visibilityIcon from '../../assets/visibilityIcon.svg';
 
 export default function ResetPwdPage({ active }) {
   return (
-    <LogPagesProps
+    <AccountPageTemplate
       active={active}
       header="Reset password"
       footer="Back to Log in Page"
     >
-      <div>
+      <div className={styles.ResetPwdPage}>
         <form>
-          <div className="signUp-password">
+          <div className={styles.password}>
             <input
-              className="signUp-detail"
+              className={styles.input}
               type="text"
               id="resetPwd"
               name="resetPwd"
               placeholder="Password"
             ></input>
 
-            <div className="visibilityIcon">
+            <div className={styles.visibilityIcon}>
               <img src={visibilityIcon} alt="visibility"></img>
             </div>
           </div>
 
-          <div className="signUp-password">
+          <div className={styles.password}>
             <input
-              className="signUp-detail"
+              className={styles.input}
               type="text"
               id="resetConfirmPwd"
               name="resetConfirmPwd"
               placeholder="Confirm Password"
             ></input>
 
-            <div className="visibilityIcon">
+            <div className={styles.visibilityIcon}>
               <img src={visibilityIcon} alt="visibility"></img>
             </div>
           </div>
 
           <input
-            className="signPage-buttons"
+            className={styles.buttons}
             type="submit"
             value="Reset Password"
           ></input>
         </form>
       </div>
-    </LogPagesProps>
+    </AccountPageTemplate>
   );
 }
