@@ -1,12 +1,15 @@
+.signUpPage{
+ 
+}
 
-.signUp-fname {
+.fName {
   width: 150px;
   padding: 10px 0 11px 10px;
   border: solid 1px #969696;
   background-color: #ffffff;
 }
 
-.signUp-lname {
+.lName {
   margin-left: 33px;
   width: 150px;
   padding: 10px 0 11px 10px;
@@ -14,7 +17,7 @@
   background-color: #ffffff;
 }
 
-.signUp-detail {
+.input {
   width: 335px;
   margin: 35px 0 0 0;
   border: solid 1px #969696;
@@ -31,7 +34,12 @@
   color: #969696;
 }
 
-.signPage-buttons {
+.password{
+  display: block;
+  position: relative;
+}
+
+.buttons {
   width: 335px;
   margin: 24px 0px 0px 0;
   padding: 15px 87px 15px 86px;
@@ -47,10 +55,7 @@
   color: #ffffff;
 }
 
-.signUp-password{
-  display: block;
-  position: relative;
-}
+
 
 .visibilityIcon{
   position: absolute;

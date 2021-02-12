@@ -1,0 +1,48 @@
+.ResetPwdPage{
+  
+}
+
+.password{
+    display: block;
+    position: relative;
+  }
+
+  .visibilityIcon{
+    position: absolute;
+    top: 58%;
+    right: 5%;
+  }
+
+  
+  .input {
+    width: 335px;
+    margin: 35px 0 0 0;
+    border: solid 1px #969696;
+    background-color: #ffffff;
+  
+    padding: 10px 0 11px 10px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.04px;
+    color: #969696;
+  }
+
+  .buttons {
+    width: 335px;
+    margin: 24px 0px 0px 0;
+    padding: 15px 87px 15px 86px;
+    border: solid 1px #979797;
+    background-color: #23036a;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.38px;
+    color: #ffffff;
+  }

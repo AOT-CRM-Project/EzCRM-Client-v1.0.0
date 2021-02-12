@@ -2,11 +2,13 @@ import React from 'react';
 
 import styles from './SignupSuccess.module.scss';
 
-import successIcon from '../../../assets/success-icon.svg';
+import successIcon from '../../assets/success-icon.svg';
 
-function SignupSuccess() {
+import AccountPageTemplate from '../AccountPageTemplate/AccountPageTemplate';
+
+function SignupSuccess({active,}) {
   return (
-    <div>
+    <AccountPageTemplate active={active} header="" footer="">
       <div className={styles.container}>
         <div className={styles.sendIcon}>
           <img src={successIcon}></img>
@@ -19,7 +21,7 @@ function SignupSuccess() {
           </div>
         </div>
       </div>
-    </div>
+    </AccountPageTemplate>
   );
 }
 
